@@ -15,3 +15,6 @@ the function and run automatically when you commit through a GitHub action.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
+
+## Answers
+This algorithm has a worst-case time complexity of $\Theta(n!*n^2)$. We first check to see if the lists have the same length ($\Theta(1)$). We then generate a list of all the nodes ($\Theta(n)$) and then create a list of all permutations ($\Theta(n!)$). To permute a matrix takes $\Theta(n^2)$ time so doing all of them takes $\Theta(n! * n^2)$. We also must compare all the matrixes so it'll take $\Theta(n! * n^2)$ time. Overall this gives us a time complexity of $\Theta(n! * n^2)$.
