@@ -17,4 +17,19 @@ the function and run automatically when you commit through a GitHub action.
 What is the worst-case big $\Theta$ time complexity of your algorithm?
 
 ## Answers
-This algorithm has a worst-case time complexity of $\Theta(n!*n^2)$. We first check to see if the lists have the same length ($\Theta(1)$). We then generate a list of all the nodes ($\Theta(n)$) and then create a list of all permutations ($\Theta(n!)$). To permute a matrix takes $\Theta(n^2)$ time so doing all of them takes $\Theta(n! * n^2)$. We also must compare all the matrixes so it'll take $\Theta(n! * n^2)$ time. Overall this gives us a time complexity of $\Theta(n! * n^2)$.
+This algorithm has a worst-case time complexity of $\Theta(n! \cdot n^2)$.
+
+1. Check to see if the graphs have the same number of nodes $\rightarrow\Theta(1)$
+2. Generate a list of the nodes in the graph $\rightarrow\Theta(n)$ 
+3. Generate all permutations of the nodes in the graph and iterate $\rightarrow\Theta(n!)$
+    1. Permute the matrix $\rightarrow\Theta(n^2)$
+    2. Check if the matrix's are the same $\rightarrow\Theta(n^2)$
+
+
+## Sources
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/print-all-permutation-of-array-using-javascript/) helped me with permuting the array of nodes
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
+

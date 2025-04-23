@@ -22,6 +22,7 @@ function are_isomorphic(graph1, graph2) {
     return false; // No match found
 }
 
+// Gets all permutations of nodes
 function getPermutations(arr) {
     if (arr.length === 0) return [[]];
 
@@ -40,6 +41,7 @@ function getPermutations(arr) {
     return result;
 }
 
+// This permutes a matrix given a mapping
 function permuteAdjMatrix(matrix, permutation) {
     const n = permutation.length;
     const permuted = [];
@@ -54,6 +56,7 @@ function permuteAdjMatrix(matrix, permutation) {
     return permuted;
 }
 
+// Just iterates through and see;s if two matrixes are equal
 function matricesEqual(a, b) {
     const n = a.length;
     for (let i = 0; i < n; i++) {
@@ -64,17 +67,3 @@ function matricesEqual(a, b) {
     return true;
 }
 
-// === Test ===
-const test1 = [
-    [0, 1, 1],
-    [1, 0, 0],
-    [1, 0, 0]
-];
-
-const test2 = [
-    [0, 1, 0],
-    [1, 0, 1],
-    [0, 1, 1]
-];
-
-console.log(are_isomorphic(test1, test2)); // Should print: false
