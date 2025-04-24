@@ -17,13 +17,13 @@ the function and run automatically when you commit through a GitHub action.
 What is the worst-case big $\Theta$ time complexity of your algorithm?
 
 ## Answers
-This algorithm has a worst-case time complexity of $\Theta(n! \cdot n^2)$.
+This algorithm has a worst-case time complexity of $\Theta(|V|! \cdot |V|^2)$.
 
 1. Check to see if the graphs have the same number of nodes $\rightarrow\Theta(1)$
-2. Generate a list of the nodes in the graph $\rightarrow\Theta(n)$ 
-3. Generate all permutations of the nodes in the graph and iterate $\rightarrow\Theta(n!)$
-    1. Permute the matrix $\rightarrow\Theta(n^2)$
-    2. Check if the matrix's are the same $\rightarrow\Theta(n^2)$
+2. Generate a list of the nodes in the graph $\rightarrow\Theta(|V|)$ 
+3. Generate all permutations of the nodes in the graph and iterate $\rightarrow\Theta(|V|!)$
+    1. Permute the matrix $\rightarrow\Theta(|V|^2)$
+    2. Check if the matrix's are the same $\rightarrow\Theta(|V|^2)$
 
 
 ## Sources
