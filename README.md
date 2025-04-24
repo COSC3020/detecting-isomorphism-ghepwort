@@ -15,3 +15,21 @@ the function and run automatically when you commit through a GitHub action.
 ## Runtime Analysis
 
 What is the worst-case big $\Theta$ time complexity of your algorithm?
+
+## Answers
+This algorithm has a worst-case time complexity of $\Theta(|V|! \cdot |V|^2)$.
+
+1. Check to see if the graphs have the same number of nodes $\rightarrow\Theta(1)$
+2. Generate a list of the nodes in the graph $\rightarrow\Theta(|V|)$ 
+3. Generate all permutations of the nodes in the graph and iterate $\rightarrow\Theta(|V|!)$
+    1. Permute the matrix $\rightarrow\Theta(|V|^2)$
+    2. Check if the matrix's are the same $\rightarrow\Theta(|V|^2)$
+
+
+## Sources
+
+[GeeksForGeeks](https://www.geeksforgeeks.org/print-all-permutation-of-array-using-javascript/) helped me with permuting the array of nodes
+
+I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
+
+
